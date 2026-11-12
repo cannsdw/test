@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RUSH SHOP — Digital Goods</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">RUSH<span>.</span></a><nav><a href="#shop">SHOP</a><a href="#lookup">MY ORDERS</a><a href="#about">GUIDE</a></nav><span class="status">DIGITAL GOODS</span></header>
+<main>
+<section class="hero">
+  <div class="eyebrow">PLAYER FIRST · DIGITAL GOODS</div><h1>PLAY<br><em>WITHOUT</em><br>LIMITS.</h1>
+  <p>필요한 순간, 간편하게.<br>RUSH SHOP의 디지털 상품 스토어</p>
+  <a class="cta" href="#shop">상품 둘러보기 <b>↗</b></a><div class="hero-mark">R</div>
+</section>
+<section class="section" id="shop">
+ <div class="section-head"><div><div class="eyebrow">01 / FEATURED PRODUCT</div><h2>FEATURED DROP</h2></div><span class="muted" id="shopStatus">CURRENTLY IN PREPARATION</span></div>
+ <article class="product">
+  <div class="product-art"><div class="art-grid"></div><div class="coin">G</div><div class="art-caption">BATTLEGROUNDS<br>G-COIN</div></div>
+  <div class="product-info"><div class="pill">PUBG · DIGITAL CODE</div><h3 id="productName">PUBG 11,200<br>G-COIN CDK</h3><p id="productDescription">디지털 코드 상품입니다. 지원 지역·플랫폼 및 사용 조건은 구매 전 확인해 주세요.</p><div class="price" id="productPrice">판매 준비 중</div><button class="primary" id="buyButton" type="button" disabled>COMING SOON</button><small id="productNote">정식 재판매 권한, 상품 조건 및 운영 설정 확인 후 판매가 시작됩니다.</small></div>
+ </article>
+ <div class="checkout-panel hidden" id="checkoutPanel">
+  <div class="eyebrow">SECURE ORDER / BANK TRANSFER</div><h3>주문 정보 입력</h3><p class="muted">주문 후 안내되는 계좌로 입금해 주세요. 관리자가 입금을 확인한 뒤 코드가 배정됩니다.</p>
+  <form id="checkoutForm" class="checkout-form">
+   <label>이름<input name="name" autocomplete="name" required minlength="2" maxlength="40" placeholder="입금자명과 동일하게 입력"></label>
+   <label>이메일<input name="email" type="email" autocomplete="email" required placeholder="주문 조회에 사용할 이메일"></label>
+   <label>연락처 (선택)<input name="phone" autocomplete="tel" placeholder="010-0000-0000"></label>
+   <label>주문 조회 PIN (숫자 4~8자리)<input name="lookupPin" inputmode="numeric" pattern="[0-9]{4,8}" minlength="4" maxlength="8" required placeholder="주문 조회 시 필요"></label>
+   <label class="checkline"><input type="checkbox" required> 상품 및 환불 안내를 확인했습니다.</label>
+   <button class="primary" type="submit">주문 생성 및 계좌 안내 받기 ↗</button>
+  </form><div id="checkoutResult" aria-live="polite"></div>
+ </div>
+</section>
+<section class="section lookup" id="lookup">
+ <div class="section-head"><div><div class="eyebrow">02 / ORDER TRACKING</div><h2>MY ORDERS</h2></div><span class="muted">GUEST ORDER LOOKUP</span></div>
+ <div class="lookup-panel"><div><h3>구매내역 조회</h3><p>주문번호, 이메일, 주문 시 설정한 PIN으로 조회할 수 있습니다.</p></div>
+ <form id="lookupForm"><label>주문번호<input name="orderNo" placeholder="RUSH-XXXXXXXX-XXXX" required></label><label>이메일<input name="email" type="email" placeholder="주문 시 입력한 이메일" required></label><label>조회 PIN<input name="lookupPin" type="password" inputmode="numeric" pattern="[0-9]{4,8}" required placeholder="주문 시 설정한 PIN"></label><button class="primary">주문 조회 <b>↗</b></button></form><div id="lookupResult" aria-live="polite"></div></div>
+</section>
+<section class="section guide" id="about"><div class="eyebrow">03 / HOW IT WORKS</div><h2>STRAIGHTFORWARD<br>BY DESIGN.</h2><div class="steps"><div><b>01</b><h4>ORDER</h4><p>상품을 선택하고 주문 정보를 입력합니다.</p></div><div><b>02</b><h4>TRANSFER</h4><p>주문번호와 입금자명을 확인하고 안내된 계좌로 이체합니다.</p></div><div><b>03</b><h4>RECEIVE</h4><p>관리자 입금 확인 후 주문 조회에서 발급 코드를 확인합니다.</p></div></div></section>
+</main>
+<footer><a class="brand" href="/">RUSH<span>.</span></a><span>© 2026 RUSH SHOP. ALL RIGHTS RESERVED.</span><span>BUSINESS INFORMATION · TERMS · PRIVACY</span></footer>
+<script src="/app.js"></script>
+</body></html>
